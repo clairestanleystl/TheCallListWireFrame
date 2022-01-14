@@ -1,0 +1,297 @@
+/* ***** MOBILE DISPLAY ***** */
+
+/* GLOBAL STYLES */
+* {
+    margin: 0 auto;
+    font: 1em sans-serif;
+}
+
+.grey {
+    background-color: grey;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(170, 238, 243);
+}
+
+/* LOGO CONTAINER */
+
+.logo-container {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    max-height: 75px;
+    height: 75px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+
+}
+
+/* MAIN CONTAINER */
+
+.video {
+    background-color: rgb(207, 241, 207);
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+
+}
+
+.video-side {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 40%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    border: 1px black solid;
+}
+
+.chat-contain {
+    height: 20%;
+    width: 100%;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PARTY CONTAINER */
+
+.party-contain {
+    height: 30%;
+}
+
+.grid-contain {
+    width: 100%;
+
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.party-box {
+    height: 50%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: khaki;
+    border: 1px black solid;
+}
+
+.leave-btn {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    height: 3%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leave-btn {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+/* ***** TABLET DISPLAY ***** */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* LOGO CONTAINER */
+
+    .logo-container {
+        display: inline-block;
+        width: 65%;
+        margin-top: 20px;
+    }
+
+    #logo {      
+        width: 60%;
+    }
+
+    /* MAIN CONTAINER */
+
+    .main-contain {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+
+    .video-contain {
+        width: 65%;
+    }
+
+    .video {
+        width: 100%;
+        height: 400px;
+        left: 0;
+        border: 1px black solid;
+
+    }
+
+    .video-side {
+        position: absolute;
+        top: 117px;
+        right: 35%;
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .chat-contain {
+        width: 250px;
+        height: 400px;
+        margin: 0 5%;
+    }
+
+    /* PARTY CONTAINER */
+
+    .party-contain {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grid-contain {
+        width: 70%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .party-box {
+        height: 100px;
+        width: 100px; 
+        text-align: center;
+    }
+
+    .leave-btn {
+        position: relative;
+        width: 37%;
+        height: 30px;
+        right: auto;
+    }
+
+    #leave-btn {
+        width: 250px;
+        height: 50px;
+    }
+
+}
+
+/* ***** DESKTOP DISPLAY ***** */
+
+@media only screen and (min-width: 1025px) {
+
+    /* LOGO CONTAINER */
+
+    .logo-container {
+        height: 15%;
+    }
+
+    #logo {      
+        width: 30%;
+    }
+
+    /* MAIN CONTAINER */
+
+    .main-contain {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 500px;
+    }
+
+    .video-contain {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .video {
+        width: 70%;
+        height: 100%;
+    }
+
+    .video-side {
+        position: relative;
+        right: initial;
+        top: initial;
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .side-video-box {
+        width: 250px;
+    }
+    
+    .chat-contain {
+        width: 250px;
+        height: 100%;
+    }
+
+    /* PARTY CONTAINER */
+
+    .party-contain {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2% 0;
+    }
+
+    .grid-contain {
+        width: 70%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-left: 20%;
+    }
+
+    .party-box {
+        height: 100px;
+        width: 100px; 
+        text-align: center;
+    }
+
+    .leave-btn {
+        position: relative;
+        width: 25%;
+        height: 30px;
+        right: auto;
+    }
+
+    #leave-btn {
+        width: 250px;
+        height: 50px;
+    }
+}
